@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+         />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/photo"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/textViewName"/>
+
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/level"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLevel"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/textViewHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/hp"
+        android:layout_alignBaseline="@id/textViewLevel"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewHealth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHealth"
+        android:layout_alignBaseline="@id/textViewLevel1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/textViewRarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/rarity"
+        android:layout_alignBaseline="@id/textViewLevel"
+        android:layout_toEndOf="@id/textViewHealth"
+        android:layout_marginStart="100dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewRarity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewHealth1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/teal_200"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/types"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewLevel1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewTypes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTypes"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/textViewEvolvesFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evolvesFrom"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/textViewTypes"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textViewEvolvesFrom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEvolvesFrom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@id/textViewTypes1"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/textViewEvolvesTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/evolvesTo"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/textViewEvolvesFrom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewEvolvesTo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEvolvesTo"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/teal_200"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEvolvesFrom1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/randomize"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PokeCards</string>
+    <string name="types">Types:</string>
+    <string name="hp">HP:</string>
+    <string name="level">Level:</string>
+    <string name="photo">Foto</string>
+    <string name="evolvesFrom">Evolves From:</string>
+    <string name="evolvesTo">Evolves To:</string>
+    <string name="rarity">Rarity:</string>
+    <string name="randomize">Randomize</string>
+</resources>
